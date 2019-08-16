@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Red+Hat+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333333;
+  font-size: 18px;
+  background-color: #efefef;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+}
+
+.content {
+  padding: 40px;
+  background-color: #fcfcfc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button#submit {
+  padding: 8px 20px;
+  font-size: 18px;
+}
