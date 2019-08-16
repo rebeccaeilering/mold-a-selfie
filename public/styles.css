@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,9 +7,9 @@
 }
 
 body {
-  color: #333333;
+  color: #eee;
   font-size: 18px;
-  background-color: #efefef;
+  background-color: #222;
 }
 
 h1 {
@@ -22,12 +23,12 @@ h1 {
 
 header {
   text-align: center;
-  padding: 50px;
+  padding: 0 50px;
 }
 
 .content {
   padding: 40px;
-  background-color: #fcfcfc;
+  background-color: #333;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   border-radius: 4px;
 }
@@ -63,7 +64,7 @@ button#submit {
 
 .char {
   color: yellow;
-  font-size: 150px;
+  font-size: 84px;
   font-weight: 700;
   line-height: 135px;
   transform-origin: center 50%;
@@ -72,18 +73,21 @@ button#submit {
 
 @keyframes wiggle-char {
   0%, 50%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(4deg); }
-  75% { transform: rotate(-4deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
 }
 
 .char:nth-child(1),
-.char:nth-child(9) {
+.char:nth-child(9),
+.char:nth-child(12)
+ {
   color: blue;
 }
 
 .char:nth-child(2),
 .char:nth-child(4),
 .char:nth-child(8),
-.char:nth-child(10) {
+.char:nth-child(10),
+.char:nth-child(13) {
   color: red;
 }
