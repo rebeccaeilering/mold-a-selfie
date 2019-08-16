@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Red+Hat+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,6 +9,10 @@ body {
   color: #333333;
   font-size: 18px;
   background-color: #efefef;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
 }
 
 .container {
@@ -28,12 +31,6 @@ header {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   border-radius: 4px;
 }
-
-
-
-
-
-
 
 label,
 input {
@@ -61,4 +58,32 @@ input::placeholder {
 button#submit {
   padding: 8px 20px;
   font-size: 18px;
+}
+
+
+.char {
+  color: yellow;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 135px;
+  transform-origin: center 50%;
+  animation: wiggle-char 0.5s linear infinite both;
+}
+
+@keyframes wiggle-char {
+  0%, 50%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(4deg); }
+  75% { transform: rotate(-4deg); }
+}
+
+.char:nth-child(1),
+.char:nth-child(9) {
+  color: blue;
+}
+
+.char:nth-child(2),
+.char:nth-child(4),
+.char:nth-child(8),
+.char:nth-child(10) {
+  color: red;
 }
