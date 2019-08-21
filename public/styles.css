@@ -61,17 +61,31 @@ input {
 }
 
 input:focus {
-  border: 1px solid red;
+  border: 1px solid #ed2424;
   outline: 0;
 }
 
 button#submit {
   padding: 8px 20px;
   font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2b8bf9;
+  border-color: #2b8bf9;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+button#submit:hover,
+button#submit:focus {
+  background-color: #0077fe;
+  border-color:#0077fe;
 }
 
 video {
-  padding: 15px ;
+  padding: 15px;
+  margin-bottom: 15px;
   background-color: #222;
   border-radius: 5px;
   box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
@@ -79,7 +93,7 @@ video {
 
 
 .char {
-  color: yellow;
+  color: #fcee56;
   font-size: 84px;
   font-weight: 700;
   line-height: 135px;
@@ -97,7 +111,7 @@ video {
 .char:nth-child(9),
 .char:nth-child(12)
  {
-  color: blue;
+  color: #0077fe;
 }
 
 .char:nth-child(2),
@@ -105,5 +119,5 @@ video {
 .char:nth-child(8),
 .char:nth-child(10),
 .char:nth-child(13) {
-  color: red;
+  color: #ed2424;
 }
