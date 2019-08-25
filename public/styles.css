@@ -40,6 +40,23 @@ header {
   background-color: #333;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.button {
+  display: block;
+  background-color: #666;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  transition: all .4s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #595959;
 }
 
 label,
@@ -139,4 +156,5 @@ video {
 
 .list-item img {
   margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
