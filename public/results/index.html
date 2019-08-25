@@ -4,17 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css">
   <link rel="stylesheet" href="../styles.css">
   <title>Mold-A-Selfie | List Results</title>
 </head>
 <body>
     <header>
-      <h1>Mold-A-Selfie</h1>
-      <a href="../index.html">Enter Data</a>
+      <h1 data-splitting>Mold-A-Selfie</h1>
     </header>
     <main>
-      <div class="results-list"></div>
+      <div class="container">
+        <div class="content">
+          <h2>My Collection</h2>
+          <div class="results-list"></div>
+        </div>
+        <a href="/">Go Back Home</a>
+      </div>
     </main>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script>
+    Splitting();
+  </script>
   <script src="results.js">
     
   </script>
